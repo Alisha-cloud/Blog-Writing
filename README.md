@@ -25,6 +25,7 @@ A full-stack blog application built with **Express.js** and **EJS**, allowing us
 ```bash
 npm install
 node index.js
+```
 
 ## 💻 Local Usage
 
