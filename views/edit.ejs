@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+</head>
+<body>
+    <h2>Edit Your Blog</h2>
+    <p>Post id : <%=post.id%></p>
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
+        <div style="display: flex; gap: 10px;">
+          <textarea rows="10" cols="40" name="title"><%=post.title%></textarea>
+        <textarea rows="20" cols="50" name="content"><%=post.content%></textarea>
+        </div>
+         <button>Submit</button>
+    </form>
+</body>
+</html>

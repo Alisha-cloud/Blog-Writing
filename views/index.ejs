@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Editor</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h1 class="heading">Blog Writing</h1>
+   <% for(post of posts){ %>
+        <div class="post">
+            <h2 class="title">Title : <%=post.title%></h2>
+            <p class="content"> <%=post.content%></p>
+            <br>
+            <div class="post-actions">
+               <a class="action-link" href="http://localhost:8080/posts/<%=post.id%>">See In Detail</a>
+            <a class="action-link" href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE" class="delete-form">
+               <button class="delete-button">Delete Blog</button>
+            </form>
+            </div>
+            
+            
+        </div>
+  <%  } %>
+
+  <br>
+  <br>
+  <div class="create-new">
+   <a href="http://localhost:8080/posts/new">Create New Blog</a>
+  </div>
+  
+  <br>
+  <br>
+</body>
+</html>
