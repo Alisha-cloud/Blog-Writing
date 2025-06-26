@@ -28,4 +28,5 @@ node index.js
 
 ## 💻 Local Usage
 
-Once the server is running, open your browser and go to: <http://localhost:8080/posts>
+Once the server is running, open your browser and go to:  
+[http://localhost:8080/posts](http://localhost:8080/posts)
